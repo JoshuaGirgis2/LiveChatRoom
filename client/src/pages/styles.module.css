@@ -71,3 +71,23 @@
     border: 1px solid rgb(153, 217, 234);
     font-size: 0.9rem;
 }
+
+.sendButton {
+    background-color: #8ed7f5;
+    /* Light blue background */
+    color: #000;
+    /* Black text */
+    border: none;
+    padding: 10px 20px;
+    /* Spacing for the button */
+    border-radius: 8px;
+    /* Rounded corners */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sendButton:hover {
+    background-color: #73c2eb;
+    /* Darker blue on hover */
+}

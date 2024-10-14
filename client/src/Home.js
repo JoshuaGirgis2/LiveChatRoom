@@ -1,5 +1,7 @@
+import React from 'react';
 import styles from './styles.module.css';
 import { useNavigate } from 'react-router-dom';
+
 const Home = ({ username, setUsername, room, setRoom, socket }) => {
   const navigate = useNavigate();
   const joinRoom = () => {
@@ -14,10 +16,12 @@ const Home = ({ username, setUsername, room, setRoom, socket }) => {
       <div className={styles.formContainer}>
         <h1>{`<>DevRooms</>`}</h1>
         <input className={styles.input} placeholder='Username...'
-          onChange={(e) => setUsername(e.target.value)} />
+          onChange={(e) => setUsername(e.target.value)}
+          value={username} />
 
         <select className={styles.input}
-          onChange={(e) => setRoom(e.target.value)}>
+          onChange={(e) => setRoom(e.target.value)}
+          value={room}>
           <option>-- Select Room --</option>
           <option value='javascript'>JavaScript</option>
           <option value='node'>Node</option>
